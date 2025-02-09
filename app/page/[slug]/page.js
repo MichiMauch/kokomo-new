@@ -18,7 +18,7 @@ const BlogPagination = async ({ params }) => {
 
   return (
     <>
-      <SeoMeta title="Blog Pagination" />
+      <SeoMeta title="KOKOMO House - Alles über unser Tiny House Projekt" />
       <section className="section">
         <div className="container">
           <Posts className="mb-16" posts={currentPosts} authors={authors} />

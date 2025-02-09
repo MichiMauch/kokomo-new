@@ -6,12 +6,16 @@ import SimilarPosts from "@partials/SimilarPosts";
 import Image from "next/image";
 import Link from "next/link";
 import MDXContent from "./partials/MDXContent";
+import replaceMarkdownVars from "./utils/replaceMarkdownVars"; // 🔥 Importiere Ersetzungsfunktion
 
 const PostSingle = ({ post, posts, authors, slug }) => {
   const { frontmatter, content } = post;
   let { description, title, date, image, categories, tags } = frontmatter;
   description = description ? description : content.slice(0, 120);
   const similarPosts = similerItems(post, posts, slug);
+
+  // 🔥 Ersetze `{{IMAGE_PATH}}` in `content`, bevor es gerendert wird
+  const processedContent = replaceMarkdownVars(content);
 
   return (
     <>
@@ -72,7 +76,8 @@ const PostSingle = ({ post, posts, authors, slug }) => {
               />
             )}
             <div className="content mb-16 text-left">
-              <MDXContent content={content} />
+              {/* 🔥 Verwende das verarbeitete Markdown mit `MDXContent` */}
+              <MDXContent content={processedContent} />
             </div>
             <div className="flex flex-wrap items-center justify-between">
               <ul className="mb-4 mr-4 space-x-3">

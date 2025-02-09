@@ -71,8 +71,9 @@ const Posts = ({ posts, className, authors }) => {
               {post.frontmatter.title}
             </Link>
           </h3>
+          {/* 🔥 Nutzt jetzt `description` aus dem Frontmatter statt `content` */}
           <p className="text-text">
-            {post.content && post.content.slice(0, Number(summary_length))}...
+            {post.frontmatter.description || "Keine Beschreibung verfügbar"}
           </p>
         </div>
       ))}

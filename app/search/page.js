@@ -12,7 +12,7 @@ const SearchPage = async () => {
           <Suspense
             fallback={
               <h1 className="h2 mb-8 text-center">
-                Searching <span className="text-primary">...</span>
+                Suche... <span className="text-primary">...</span>
               </h1>
             }
           >

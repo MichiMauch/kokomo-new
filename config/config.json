@@ -1,29 +1,29 @@
 {
   "site": {
-    "title": "Bookworm Next | Personal Blog Theme",
+    "title": "Unser Tiny House Blog | KOKOMO House",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+    "favicon": "/images/favicon.ico",
+    "logo": "/images/logo.svg",
     "logo_width": "200",
     "logo_height": "34",
-    "logo_text": "Bookworm Light"
+    "logo_text": "KOKOMO House"
   },
 
   "settings": {
-    "pagination": 3,
+    "pagination": 11,
     "summary_length": 200,
     "blog_folder": "posts"
   },
 
   "params": {
     "tag_manager_id": "",
-    "contact_form_action": "#",
-    "copyright": "Copyright © 2022 a theme by [themefisher](https://themefisher.com)"
+    "contact_form_action": "/api/contact",
+    "copyright": "Theme made with ♥ love by [themefisher](https://themefisher.com) and a bit by [Michi](https://michimauch.ch)"
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
-    "meta_image": "/images/og-image.png",
-    "meta_description": "Next Boilerplate"
+    "meta_author": "KOKOMO House - Alles über unser Tiny House Projekt",
+    "meta_image": "/images/logo",
+    "meta_description": "Auf KOKOMO House findest du alles über unser Tiny House Projekt. Tipps und Tricks rund um die Planung, Finanzen, Energie und vieles mehr."
   }
 }

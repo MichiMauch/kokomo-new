@@ -5,12 +5,16 @@
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
+      "name": "E-Dashboard",
+      "url": "https://dashboard.kokomo.house/"
     },
     {
-      "name": "Contact",
-      "url": "/contact"
+      "name": "Über uns",
+      "url": "/ueber-uns"
+    },
+    {
+      "name": "Kontakt",
+      "url": "/kontakt"
     },
     {
       "name": "Pages",
@@ -42,12 +46,12 @@
   ],
   "footer": [
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Über uns",
+      "url": "/ueber-uns"
     },
     {
-      "name": "Contact",
-      "url": "/contact"
+      "name": "Kontakt",
+      "url": "/kontakt"
     },
     {
       "name": "Elements",
