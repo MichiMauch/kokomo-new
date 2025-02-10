@@ -1,16 +1,17 @@
 ---
 categories:
-- Tiny House
+  - Tiny House
 tags:
-- tiny house
-- heizsystem
-- umweltfreundlich
-- energieeffizienz
-- holzofen
+  - tiny house
+  - heizsystem
+  - umweltfreundlich
+  - energieeffizienz
+  - holzofen
 authors:
-- Michi
-date: '2023-12-21'
-description: Unser Tiny House nutzt im Winter einen wassergeführten Ofen für Wärme
+  - Michi
+date: "2023-12-21"
+description:
+  Unser Tiny House nutzt im Winter einen wassergeführten Ofen für Wärme
   und Brauchwasser. Im Sommer erzeugt Überschussstrom unserer Solaranlage heisses
   Wasser.
 draft: false
@@ -40,7 +41,7 @@ eine angenehme Raumtemperatur von ca. 23 bis 24 Grad. Den ganzen Heizvorgang,
 wie auch die Temperaturen im Wasserspeicher, können wir per App am Smartphone
 oder Notebook einsehen. Ebenso können wir unsere Heizung per App regeln.
 
-![]({IMAGE_PATH}/heizsystem-im-tiny-house-1024x539.webp)
+![]({IMAGE_PATH}/heizsystem-im-tiny-house.webp)
 
 ## Effiziente Temperaturregelung und Dämmung
 
@@ -51,7 +52,7 @@ unter diese Schwelle fällt, aktiviert sich die Heizungspumpe und leitet
 heisses Wasser aus dem Speicher in die Radiatoren, bis die gewünschte
 Temperatur erreicht ist.
 
-![]({IMAGE_PATH}/heizsystem-im-tiny-house-2-1024x768.webp)
+![]({IMAGE_PATH}/heizsystem-im-tiny-house-2.webp)
 
 ## Tägliches Einheizen und Holzverbrauch
 

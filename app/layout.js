@@ -5,6 +5,8 @@ import Footer from "@layouts/partials/Footer";
 import Header from "@layouts/partials/Header";
 import Providers from "@layouts/partials/Providers";
 import "../styles/style.scss";
+import Background from "@layouts/components/Background";
+
 
 export default function RootLayout({ children }) {
   const pf = theme.fonts.font_family.primary;
@@ -51,6 +53,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body suppressHydrationWarning={true}>
+      <Background />
+
         <TwSizeIndicator />
         <Header />
         <Providers>{children}</Providers>

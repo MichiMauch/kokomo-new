@@ -8,23 +8,27 @@ import React, { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
 
 const Header = () => {
-  // distructuring the main menu from menu object
   const { main } = menu;
 
-  // states declaration
+  // Navbar Fixed State
   const [navFixed, setNavFixed] = useState(false);
   const [searchModal, setSearchModal] = useState(false);
+  const [daysInTinyHouse, setDaysInTinyHouse] = useState(0);
 
   useEffect(() => {
     const changeNavbarBackground = () => {
-      if (window.pageYOffset >= 1) {
-        setNavFixed(true);
-      } else {
-        setNavFixed(false);
-      }
+      setNavFixed(window.pageYOffset >= 1);
     };
     window.addEventListener("scroll", changeNavbarBackground);
-  });
+
+    // Berechnung der Tage
+    const startDate = new Date(2022, 8, 22); // 22. September 2022 (Monate in JS sind 0-indexed)
+    const today = new Date();
+    const differenceInTime = today - startDate;
+    const differenceInDays = Math.floor(differenceInTime / (1000 * 60 * 60 * 24));
+
+    setDaysInTinyHouse(differenceInDays);
+  }, []);
 
   return (
     <>
@@ -33,12 +37,14 @@ const Header = () => {
           navFixed ? "shadow" : "pt-8 md:pt-16"
         }`}
       >
-        <nav className="navbar container">
-          {/* logo */}
-          <div className="order-0">
+        <nav className="navbar container flex items-center justify-between">
+          {/* Logo mit Tageszähler darunter */}
+          <div className="flex flex-col items-center leading-tight">
             <Logo />
+            <span className="text-xs font-semibold text-gray-600">since {daysInTinyHouse} days</span>
           </div>
-          {/* navbar toggler */}
+
+          {/* Navbar-Toggler für Mobile */}
           <input id="nav-toggle" type="checkbox" className="hidden" />
           <label
             id="show-button"
@@ -63,8 +69,8 @@ const Header = () => {
               />
             </svg>
           </label>
-          {/* /navbar toggler */}
 
+          {/* Menü */}
           <ul
             id="nav-menu"
             className="navbar-nav order-3 hidden w-full md:order-1 md:flex md:w-auto md:space-x-2"
@@ -102,6 +108,8 @@ const Header = () => {
               </React.Fragment>
             ))}
           </ul>
+
+          {/* Suchsymbol bleibt exakt an seiner Position */}
           <div className="order-1 ml-auto md:order-2 md:ml-0">
             <div
               className="cursor-pointer p-2 text-xl text-dark hover:text-primary"
@@ -113,10 +121,7 @@ const Header = () => {
             </div>
           </div>
 
-          <SearchModal
-            searchModal={searchModal}
-            setSearchModal={setSearchModal}
-          />
+          <SearchModal searchModal={searchModal} setSearchModal={setSearchModal} />
         </nav>
       </header>
     </>

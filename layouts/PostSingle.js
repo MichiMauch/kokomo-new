@@ -75,7 +75,7 @@ const PostSingle = ({ post, posts, authors, slug }) => {
                 className="rounded-lg"
               />
             )}
-            <div className="content mb-16 text-left">
+            <div className="content mb-16 mx-auto text-left w-3/4">
               {/* 🔥 Verwende das verarbeitete Markdown mit `MDXContent` */}
               <MDXContent content={processedContent} />
             </div>

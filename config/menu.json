@@ -15,36 +15,18 @@
     {
       "name": "Kontakt",
       "url": "/kontakt"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Authors",
-          "url": "/authors"
-        },
-        {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Tags",
-          "url": "/tags"
-        },
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Privacy Policy",
-          "url": "/privacy-policy"
-        }
-      ]
     }
+    
   ],
   "footer": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "E-Dashboard",
+      "url": "https://dashboard.kokomo.house/"
+    },
     {
       "name": "Über uns",
       "url": "/ueber-uns"
@@ -52,14 +34,7 @@
     {
       "name": "Kontakt",
       "url": "/kontakt"
-    },
-    {
-      "name": "Elements",
-      "url": "/elements"
-    },
-    {
-      "name": "Privacy Policy",
-      "url": "/privacy-policy"
     }
+
   ]
 }
